@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1199px) {
+  .container {
+    padding: 0 5%;
+  }
+}
+
+header {
+  padding: 2rem 0;
+  background-color: pink;
+}
+header .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header nav ul {
+  display: flex;
+  gap: 20px;
+}
+header .header nav ul li a {
+  font-size: 20px;
+  color: #000;
+}
+
+#banner {
+  padding: 2rem 0;
+  background-color: rgb(231, 237, 237);
+}
+#banner .products-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+#banner .products-card .product-card {
+  box-shadow: 8px 8px 8px #948f8f;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 10px;
+}
+#banner .products-card .product-card img {
+  width: 50%;
+}
+
+#form {
+  padding: 2rem 0;
+  background-color: #efeded;
+}
+#form .form-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#form .form-section input {
+  width: 300px;
+  padding: 8px 15px;
+  border-radius: 6px;
+  border: 1px solid #948f8f;
+  margin-bottom: 8px;
+  background-color: #fff;
+}
+
+#table-section {
+  padding: 3rem 0;
+}
+#table-section .table-section table {
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+#table-section .table-section table th {
+  border: 1px solid #000;
+  padding: 5px 15px;
+}
+#table-section .table-section table td {
+  border: 1px solid #000;
+  padding: 5px 15px;
+}
+#table-section .table-section table td img {
+  width: 100px;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  mix-blend-mode: color-burn;
+}
+#table-section .table-section table td button {
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  color: #fff;
+}
+#table-section .table-section table td button:nth-child(1) {
+  background-color: red;
+}
+#table-section .table-section table td button:nth-child(2) {
+  background-color: green;
+}/*# sourceMappingURL=main.css.map */
