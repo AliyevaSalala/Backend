@@ -85,9 +85,10 @@ form.addEventListener("submit", async function (e) {
   } else {
     await axios.patch(`${BASE_URL}/${editStatus}`, newObj);
   }
-
+  getAllData();
   productName.value = "";
   productUserName.value = "";
+  photo.value = "";
 });
 
 photo.addEventListener("change", function (e) {
